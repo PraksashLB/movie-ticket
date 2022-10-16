@@ -8,6 +8,19 @@ app = Flask(__name__)
 
 @app.route('/')
 def renderLoginPage():
+
+
+
+
+
+
+
+
+
+
+
+
+
     return render_template('login.html')
 
 
@@ -79,6 +92,15 @@ def getSeating():
 	showID = request.form['showID']
 
 	res = runQuery("SELECT class,no_of_seats FROM shows NATURAL JOIN halls WHERE show_id = "+showID)
+
+
+
+
+
+
+
+
+
 
 	totalGold = 0
 	totalStandard = 0
